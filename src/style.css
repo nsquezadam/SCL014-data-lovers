@@ -4,17 +4,28 @@
 }
 
 body{
-    background-image:url(./imagenes/poke\ wall\ desktop\ full.png);
+    background-image:url(./imagenes/chicodelanieve.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 .menubar { 
     background:#353534;
     width: 100vw;
     height: 5.125rem;
+    display: inline-flexbox;
+   
 }
  .logo .isotipo .menuitems {
     display:block;
     border-right: khaki;
    
+}
+main {
+    padding: 100px;
+    background: rgba(86,100,47, .7);
+    width: 80%;
+    max-width: 1000px;
+    
+
 }
