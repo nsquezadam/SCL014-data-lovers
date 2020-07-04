@@ -1,4 +1,4 @@
-import { } from './data.js';
+import {} from './data.js';
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
@@ -8,9 +8,10 @@ console.table(data.pokemon);
 console.log('b');
 console.log(data.pokemon.length);
 */
+// eslint-disable-next-line no-console
+console.table(data.pokemon);
 
-
-let newData = data.pokemon;
+// et newData = data.pokemon;
 
 
 // me retorna toda la data

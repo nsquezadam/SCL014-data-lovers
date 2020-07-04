@@ -2,10 +2,19 @@
     margin: 0px;
     padding:0px;
 }
- .menubar { 
-    background-color:#353534;
-    width:100vw;
+
+body{
+    background-image:url(./imagenes/poke\ wall\ desktop\ full.png);
+    background-repeat: no-repeat;
+
+}
+.menubar { 
+    background:#353534;
+    width: 100vw;
     height: 5.125rem;
 }
-
-
+ .logo .isotipo .menuitems {
+    display:block;
+    border-right: khaki;
+   
+}
