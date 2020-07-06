@@ -12,17 +12,4 @@ console.log(data.pokemon.length);
 console.table(data.pokemon);
 
 // et newData = data.pokemon;
-
-
-// me retorna toda la data
-
-// let newData = data.pokemon.filter(item => {
-//  return item.num < 100
-// })
-// console.log ("data.pokemon =>",data.pokemon);
-// console.log ("newData =>", newData);
-
-/* let newData = data.pokemon.filter(( item, index, array) => {
-   document.write(item.name, index )
-});
-*/
+cons new

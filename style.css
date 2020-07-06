@@ -2,13 +2,11 @@
     margin: 0px;
     padding:0px;
 }
-
 body{
-
     background-image:url(./imagenes/wall\ pokemon\ montañas.png);
     background-repeat: no-repeat;
     position: fixed;
-/* 
+  /* 
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -18,41 +16,33 @@ body{
     -webkit-transform: translate3d(0,0,0);
     z-index: -1;
    */
-
 }
-
-.tab {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-/*border-right: black;*/
+ .tab {
+ 	display:flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+  /*border-right: black;*/
     text-decoration: none;
     padding-left: 2rem;
     text-align: center;
     color:#e5e5e5; 
     font-family: Roboto Condensed;
     font-size: 16px;
-
 }
-
 nav { 
     background:#353534;
     margin-right: 3.75em;
     width: 100vw;
     height: 5.125rem;
-
     display: flex;
     justify-content: flex-end;
 }
-
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 3.75rem;
-
+ .logo {
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ 	margin-left: 3.75rem;
 }
-
 header {
     width: 100%;
     height: 5.125rem;
@@ -62,18 +52,4 @@ header {
     justify-content: space-between;
     top: 0;
     background-color:#353534;
-}
-
-
-.tittle {
-    display: flex;
-    background-color: tomato;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-}
-.text-content { 
-    display: flex;
-    background-color: teal;
-    text-align: left;
 }
