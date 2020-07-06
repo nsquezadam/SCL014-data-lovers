@@ -4,28 +4,95 @@
 }
 
 body{
-    background-image:url(./imagenes/chicodelanieve.jpg);
+    background-image:url(./imagenes/wall\ pokemon\ montañas.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
-.menubar { 
-    background:#353534;
+
+.menubar {   
+    background: #37412E;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
     width: 100vw;
     height: 5.125rem;
-    display: inline-flexbox;
-   
+    display: flex;
+    justify-content: space-between;
 }
- .logo .isotipo .menuitems {
-    display:block;
-    border-right: khaki;
-   
-}
-main {
-    padding: 100px;
-    background: rgba(86,100,47, .7);
-    width: 80%;
-    max-width: 1000px;
-    
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3.75rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: disc;
+    text-decoration: none;
+    color: palegoldenrod;
+
+}
+
+.menu-items {
+    margin-right: 3.75rem;
+    justify-content: space-around;
+}
+
+a {
+    color:  #E0E0D3;
+    text-decoration: none;
+}
+.item {
+    font-family: Roboto Condensed;
+    font-size: 16;
+    display: flex;
+    margin-left: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    width: 5.375rem;
+    height: 5.125rem;
+}
+
+.container-home {
+    display: flex;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    margin-bottom: 4rem;
+    height: 1000px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(163, 151, 147, .5);
+}
+
+.content {
+    margin: 1rem;
+    color: white;
+    width: auto;
+    height: auto;
+    align-content: space-around;
+}
+
+
+.tittle {
+    display: flex;
+    background-color: tomato;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+.text-content { 
+    display: flex;
+    background-color: teal;
+    text-align: left;
 }
