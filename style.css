@@ -4,20 +4,45 @@
 }
 
 body{
-    background-image:url(./imagenes/wall\ pokemon\ montañas.png);
+
+    background-image:url(./imagenes/wall\ pokemon\ montañas.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    position: fixed;
+/* 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    -webkit-transform: translate3d(0,0,0);
+    z-index: -1;
+   */
+
 }
 
-.menubar {   
-    background: #37412E;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
+.tab {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+/*border-right: black;*/
+    text-decoration: none;
+    padding-left: 2rem;
+    text-align: center;
+    color:#e5e5e5; 
+    font-family: Roboto Condensed;
+    font-size: 16px;
+
+}
+
+nav { 
+    background:#353534;
+    margin-right: 3.75em;
     width: 100vw;
     height: 5.125rem;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .logo {
@@ -25,62 +50,18 @@ body{
     justify-content: flex-start;
     align-items: center;
     margin-left: 3.75rem;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: disc;
-    text-decoration: none;
-    color: palegoldenrod;
 
 }
 
-.menu-items {
-    margin-right: 3.75rem;
-    justify-content: space-around;
-}
-
-a {
-    color:  #E0E0D3;
-    text-decoration: none;
-}
-.item {
-    font-family: Roboto Condensed;
-    font-size: 16;
-    display: flex;
-    margin-left: 1.25rem;
-    align-items: center;
-    justify-content: center;
-    width: 5.375rem;
+header {
+    width: 100%;
     height: 5.125rem;
-}
-
-.container-home {
     display: flex;
-    margin-left: 3.75rem;
-    margin-right: 3.75rem;
-    height: 1000px;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    margin-left: 3.75rem;
-    margin-right: 3.75rem;
-    margin-bottom: 4rem;
-    height: 1000px;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: rgb(163, 151, 147, .5);
-}
-
-.content {
-    margin: 1rem;
-    color: white;
-    width: auto;
-    height: auto;
-    align-content: space-around;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    top: 0;
+    background-color:#353534;
 }
 
 
