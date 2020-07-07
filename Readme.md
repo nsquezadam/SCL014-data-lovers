@@ -4,7 +4,7 @@ RESEARCH
 
 Entrevistas con Usuarios y Visitantes
 
-    Preguntas:
+    Preguntas: 
     Edad y ocupación actual.
     ¿Cuanto tiempo llevas jugando Pokemon Go? 
     ¿Que contenido consideras relevante para una web de contenidos de Pokemon GO?
