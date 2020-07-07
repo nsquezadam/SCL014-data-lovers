@@ -24,8 +24,7 @@ Entrevistas con Usuarios y Visitantes
     Datos de pokemon : Tipo de pokemon, debilidad, resistencia,  ataque, salud, defensa.    
     Feed con el pokemon en tendencia, más fuertes y más usados de la temporada.
 
-
-# IDEACION
+## IDEACION
 
 ## Definición de usuario
 
@@ -37,8 +36,8 @@ Entrevistas con Usuarios y Visitantes
     Visitante
     Pablo no es un jugador activo, sin embargo es un fanático de Pokémon; debido que es una serie que marcó su infancia, le gustaría estar al día con las novedades del juego, nuevos Pokémones y noticias relacionadas.
 
-
 ## Solución a la problemática
+
     Poke world
 
     Nuestra web ofrece una pokepedia, donde nos brinda una vasta información, detalla, concisa y clara sobre cada pokemon usado en el juego, lo cual a nuestro usuario recurrente le es de gran ayuda  para poder seguir avanzando en sus siguientes batallas, y así seguir perfeccionándose como entrenador Pokémon.
@@ -50,7 +49,7 @@ Entrevistas con Usuarios y Visitantes
 
 ![HIST. USUARIO ](../src/imagenes/HUS1.png)
 
-# DESARROLLO
+## DESARROLLO
 
     * El proyecto decidió realizarse bajo la metodología Agiles Scrum, con Sprints semanales. Mediante la App Web Trello: <https://trello.com/b/0IoIlvbF/scrum>
 
@@ -108,19 +107,16 @@ Brainstorm nombre de marca
 
         [ ] Poke Troop I
 
- ### Ganador: PokeWorld
+### Ganador: PokeWorld
 
-
-# DISEÑO Y PROTOTIPADO
+## DISEÑO Y PROTOTIPADO
 
 ## Thumbnail
 
     Realizado a mano alzada, colocamos de manera clara nuestras espectativas de la página.
 ![PBF.firstsketch ](../src/imagenes/firstsketch.jpeg)
 
-
     Testeo de usabilidad realizado mediante feedback en forma grupal y de squads.
-
 
 ## Block Frame
 
@@ -136,17 +132,18 @@ Brainstorm nombre de marca
     Testeo de usabilidad realizado mediante  feedback en forma grupal y con entrevistas aleatorias a personas externas de Laboratoria.
 
 ## Wireframe
+
     Se construyó en Figma, en tonos grises.
 ![PBF.wireframeH1-1](../src/imagenes/wireframeH1-1.png)
 
 ## Interface
+
     Elegimos Figma para elaborar nuestro modelo, reflejando la paleta de colores, mood, y todo los puntos anteriormente establecidos en la etapa de Ideación.
 ![PBF.interfaceH1-1](../src/imagenes/interfaceH1-1.png)
 
 ## Prototype
 
-
-# NOTA PARA PROGRAMADORES
+## NOTA PARA PROGRAMADORES
 
 - Para clonar archivo ingresar a : <https://github.com/nsquezadam/SCL014-data-lovers>
 
@@ -155,8 +152,8 @@ Brainstorm nombre de marca
 - Ingresar a Terminal del computador, luego acceder a la carpeta donde guardarás tu repositorio y digitar: git clone
 <https://github.com/YOUR-USERNAME/YOUR-REPOSITORY>
 
+## Bibliografía
 
-# Bibliografía
 <https://www.pokemon.com/us/>
 
 <https://pokeballplus.nintendo.com/es/>
@@ -165,4 +162,4 @@ Brainstorm nombre de marca
 
 <https://pokemongolive.com/es/>
 
-<https://www.nintenderos.com/>
+<https://www.nintenderos.com/>.
