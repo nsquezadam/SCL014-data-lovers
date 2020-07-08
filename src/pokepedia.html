@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Pokepedia</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <div>
-          <img src="" alt="logo">
-          <h1>POKEPEDIA</h1>
-        </div>
-        <ul>
-          <li><a href="pokepedia.html">Pokepedia</a></li>
-          <li><a href="index.html">Pokenews</a></li>
-          <li><a href="index.html">Ranking</a></li>
-          <li><a href="index.html">Maps</a></li>
-        </ul>
+      <div class= "logo">
+        <img src="imagenes/logo.png" width="" alt="logo">
+      </div>
+      <nav>
+          <a href="pokepedia.html" class= "tab hide">Pokepedia</a>
+          <a href="#pokenews" class= "tab hide">Pokenews</a>
+          <a href="#ranking" class= "tab hide">Ranking</a>
+          <a href="#maps" class= "tab hide">Maps</a>
+        </nav>
     </header>
-      <main>
-         <select>
-          <option selected>Categorias:
-            <option value="something">Primera Categoria "Kanto"</option>
-            <option value="something_else">Segunda Categoria "Johto"</option>
-          </select>
-
-      
-
-	
-</div>
+      <main class="pokepedia">
+        <h1>POKEPEDIA</h1>
+        <div class="boton">
+          <button id="gen1btn" type="button" > Nombres de Pokemon </button>
+        </div>
+        <section id="allpoke">
+        </section>  
       </main>
+ <footer> 
+
+ </footer>
+    <script src="./main.js" type="module"></script>      
 </body>
+
 </html>
