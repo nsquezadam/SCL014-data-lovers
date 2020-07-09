@@ -119,6 +119,7 @@ header {
     background-attachment: fixed;
     z-index: -1 ;
     scroll-behavior: smooth;
+    color:green;
 
  
 }

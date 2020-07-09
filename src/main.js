@@ -10,6 +10,14 @@ import data from './data/pokemon/pokemon.js';
 // crear un boton para darle un evento 1 ok
 // traerme el boton a js 3 ok
 // darle la función 4 ok
+// const allPoke = data.pokemon;
+const allName = data.pokemon.filter(item => {
+  data.pokemon.includes();
+  return item.name;
+});
+// eslint-disable-next-line no-console
+console.log(allName);
+
 const button = document.getElementById('poke');
 button.addEventListener('click', () => {
   document.getElementById('allpoke').innerHTML = data.pokemon.map(allpoke => `
@@ -19,30 +27,31 @@ button.addEventListener('click', () => {
   <h3 class="info">Generacion: ${allpoke.generation.name}</h3>
   <h4 class="info">Peso: ${allpoke.size.weight}</h4>
   <h4 class="info">Altura: ${allpoke.size.height}</h4>
+  <h4 class="info">Tipo: ${allpoke.type}</h4>
   <h4 class="info">Sobre: ${allpoke.about}</h4></div>`).join('');
 });
 
 // imprimir en html pokemos  typo grass
 // filtrar  pokemons typo grass
 // crear botton tipo grass
-//  crear variable de  boton en   js
+// crear variable de  boton en   js
 // crear nuevo array de   typo grass
 
 
-const typeGrass = data.pokemon.filter(typeg => {
-  return typeg.type === "grass";
-  // eslint-disable-next-line no-console
-});
-
+// const typeGrass = data.pokemon.filter(typeg => {
+//  let gr = 'grass';
+ // return typeg.type(gr);
+//});
+// document.getElementById(<h4 class="info">Tipo: ${allpoke.type}</h4>
 // eslint-disable-next-line no-console
-console.log(typeGrass);
+
+
 
 // const btnGrass = document.getElementById('btnGrass');
 
 // btnGrass.addEventListener('click',() =>{
 //  document.getElementById('allpoke').innerHTML = data.pokemon.filter
-
-//    `<div id ="card"><div class="imaconteiner"> <img id="ima"src="${typeg.img}" width="130px" > </div>
+// `<div id ="card"><div class="imaconteiner"> <img id="ima"src="${typeg.img}" width="130px" > </div>
 //    <h2> ${typeg.type} </h2>`}).join('');
 // });
 
@@ -59,9 +68,6 @@ console.log(typeGrass);
 }); */
 
 // eslint-disable-next-line no-console
-
-
-
 // for (let i = 0; i < data.pokemon.name.length; i++) {
 //   pokeName.filter(data.pokemon[i].generation);
 // }
