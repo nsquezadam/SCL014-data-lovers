@@ -28,6 +28,7 @@ body{
     font-family: Roboto Condensed;
     font-size: 16px;
 }
+
 nav { 
     background:#353534;
     margin-right: 3.75rem;
@@ -40,7 +41,9 @@ nav {
  	display: flex;
  	justify-content: flex-start;
  	align-items: center;
- 	margin-left: 3.75rem;
+    margin-left: 3.75rem;
+    
+
 }
 header {
     width: 100%;
@@ -57,57 +60,75 @@ header {
     display: inline-block;
     margin-left: 3.75rem;
     margin-right: 3.75rem;
-    height: 500px;
+    height: 815px;
+    text-align: center;
+    align-items: center;
     
 }   
 .pokenews{
-    display: flex;
+    padding-top:20px;
+    margin-bottom: 2rem;
+    display:flex;
     justify-content: center;
     margin-left: 3.75rem;
     margin-right: 3.75rem;
     background-color:rgba(37, 91, 57,0.5);
-    height: 1000px;
-
+    height: 815px;
+    text-align: center;    
 }
 .ranking{
+    padding-top:20px;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     margin-left: 3.75rem;
     margin-right: 3.75rem;
     background-color:rgba(37, 91, 57,0.5);
-    height: 1000px;
+    height: 815px;
 }
 .maps{
+    padding-top:20px;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     margin-left: 3.75rem;
     margin-right: 3.75rem;
     background-color:rgba(37, 91, 57,0.5);
-    height: 1000px;
+    height: 815px;
+
 }     
-
-
-main{
+/* main de   indexhtml*/
+.main{
     width: 100%;
     display: inline-block;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     padding-top:6.25rem;
     
 }
 
-
-.namebtn { 
-    display: block;
-}
+/* main de Pokepedia*/
 .pokepedia {
-    padding:100px;
-    display: inline-flex;
-    flex-direction: column;
+    padding-top:6.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content:space-between;
+    background-attachment: fixed;
+    z-index: -1 ;
+    scroll-behavior: smooth;
+
  
 }
 #allpoke { 
     padding:50px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
     display:flex;
     align-content: center;
     flex-direction: row;
@@ -116,31 +137,101 @@ main{
 }
 #card {
     justify-content: space-between; 
-    display: block;
+    display: inline-block;
     background:rgba(37, 91, 57,0.5);
     padding: 1.875rem;
     border: 2px #df4b07;
-    width: 15rem;
-    height: 50rem;
+    width: 12rem;
+    height: 31rem;
     text-align:center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     
 }
-.class {
-    font-size:12pt;
+.imaconteiner {
+    display: inline-block;
+    width: auto;
+    align-items: center;
+    
 }
-/*
+/*imagen no me toma los atributos aun*/
+#ima {
+    width: 200px;
+    align-self: center;
+}
+.class {
+    font-size:11pt;
+}
+label{
+    margin:0px 40px 0px 0px;
+    font-size: 26px;
+    line-height:70px;
+    display:none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display:none;
+
+}
+
 @media ( max-width:700px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    #toggle:checked + nav {
+        display: block;
+
+    }
+    .logo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:45%;
+        padding: 2rem; 
+        margin-bottom: -33px;
+        margin-right: 3.75rem;
+        margin-left: 3.75rem;
+   }
+   
+    .tab{
+        width: 100vw;
+        display:block;
+        padding: 2rem;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
     nav{ 
-        background: pink;
+        width: 100vw;
+        display: inline-block;
+        background-color:#353534;
+        flex-direction:column;
+        align-items: center;
+        align-content: center;
+        justify-content:space-evenly;
+        height: auto;
+
+    }
+    header { 
+        display:inline-block;
+        justify-content:space-evenly;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* alto de la cabecera deberia  aumentar segun contenido*/
+        background-color: #353534;
     }
-    .menu{
-        margin: 10px 0px;
+    main {
+        display: inline-block;
+        margin-top: 10rem;
+        padding-top:40rem;
     }
-    .menuboton{
-            display: inline-block;       
+    .pokeworld{
+
     }
-    .hide {
-        display: none;
-    }
-}*/
+}
