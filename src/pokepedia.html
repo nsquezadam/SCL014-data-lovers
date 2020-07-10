@@ -22,8 +22,21 @@
     </header>
 <main class="pokepedia">
   <h1>POKEPEDIA</h1>  
+  <div class="search">
+    <form action="#" method="post" target="_blank">
+      <p>
+        
+        Búsqueda de Pokemon:
+ <input id="pokeName" type="search" name="busquedapokemon" placeholder="Nombre Pokemon" size="15" list="pokelist">
+      <br>
+        <datalist id="pokelist">
+        </datalist>
+        <input type="submit" value="Buscar">
+      </p>
+    </form>
+  </div>
   <div class="boton">
-  <button id='poke' type="button" >Pokemones</button>
+  <button id="poke" type="button" >Pokemones</button>
   </div>
   
 
