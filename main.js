@@ -1,7 +1,32 @@
-import {} from './data.js';
+import allPoke from './data.js';
+
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
+
+// se  crea variable  del data pokemon se llama al array de la funcion del data.js
+const pokepedia = allPoke(data.pokemon);
+// Variable  de  pokepedia ordenada alfabeticamente
+
+// eslint-disable-next-line no-console
+console.table(pokepedia);
+
+
+/* let propiedade = Object.keys(data.pokemon);
+console.log(propiedade[1],data.pokemon[properties[3]]);
+let pokeName = document.getElementById('pokeName'); */
+
+/* for (let i = 0; i < data.pokemon.length; i++) {
+  console.log(data.pokemon[i].name + " " + data.pokemon[i].type);
+} */
+
+/* for (let i = 0; i < data.pokemon.length; i++) {
+  if (data.pokemon[i].generation.name === 'kanto') {
+    // eslint-disable-next-line no-console
+    console.log(data.pokemon[i].name);
+  }
+ } */
+
 
 // imprimir los nombres de los pokemones en html ok
 // recorrer la data con for 5 ok
@@ -11,12 +36,7 @@ import data from './data/pokemon/pokemon.js';
 // traerme el boton a js 3 ok
 // darle la función 4 ok
 // const allPoke = data.pokemon;
-const allName = data.pokemon.filter(item => {
-  data.pokemon.includes();
-  return item.name;
-});
-// eslint-disable-next-line no-console
-console.log(allName);
+
 
 const button = document.getElementById('poke');
 button.addEventListener('click', () => {
@@ -30,50 +50,3 @@ button.addEventListener('click', () => {
   <h4 class="info">Tipo: ${allpoke.type}</h4>
   <h4 class="info">Sobre: ${allpoke.about}</h4></div>`).join('');
 });
-
-// imprimir en html pokemos  typo grass
-// filtrar  pokemons typo grass
-// crear botton tipo grass
-// crear variable de  boton en   js
-// crear nuevo array de   typo grass
-
-
-// const typeGrass = data.pokemon.filter(typeg => {
-//  let gr = 'grass';
- // return typeg.type(gr);
-//});
-// document.getElementById(<h4 class="info">Tipo: ${allpoke.type}</h4>
-// eslint-disable-next-line no-console
-
-
-
-// const btnGrass = document.getElementById('btnGrass');
-
-// btnGrass.addEventListener('click',() =>{
-//  document.getElementById('allpoke').innerHTML = data.pokemon.filter
-// `<div id ="card"><div class="imaconteiner"> <img id="ima"src="${typeg.img}" width="130px" > </div>
-//    <h2> ${typeg.type} </h2>`}).join('');
-// });
-
-// BOTON MENU mostrar y ocultar ITEM MENU NAVEGADOR
-/* const hide = (hide => {
-    const hideBtn = document.getElementById('menubtn');
-    hideBtn.addEventListener('click', () => {
-    const itemMenu = document.getElementsByClassName('tab');
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < itemMenu.length; i++) {
-    itemMenu[i].classList.toggle('hide');
-    }
-  });
-}); */
-
-// eslint-disable-next-line no-console
-// for (let i = 0; i < data.pokemon.name.length; i++) {
-//   pokeName.filter(data.pokemon[i].generation);
-// }
-// crear  filtro opciones
-// definir criterios de filtro
-// asignarle  a cada  opcion un id
-// llamar las  opciones con add event listener
-// darle funcionalidad a las   opciones
-// traer data de  cada opcion

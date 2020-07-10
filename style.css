@@ -18,7 +18,8 @@ body{
 }
  .tab {
  	display:flex;
- 	align-items: center;
+     align-items: center;
+     clear: right;
  	justify-content: space-between;
   /*border-right: black;*/
     text-decoration: none;
@@ -163,28 +164,34 @@ header {
 .class {
     font-size:11pt;
 }
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+}
 label{
     margin:0px 40px 0px 0px;
-    font-size: 26px;
+    font-size: 20px;
     line-height:70px;
     display:none;
-    width: 26px;
-    float: right;
+    width: 29px;
+   
+ 
 }
-#toggle{
+#toggle {
     display:none;
-
 }
 
-@media ( max-width:700px){
-    label{
-        display: block;
-        cursor: pointer;
-    }
-    #toggle:checked + nav {
-        display: block;
+@media  ( max-width:500px){
 
+
+    label{
+        display:block;
+        cursor: pointer;
+       
+        float: right;
     }
+   
     .logo {
 
         display: flex;
@@ -197,27 +204,37 @@ label{
         margin-left: 3.75rem;
    }
    
-    .tab{
-        width: 100vw;
+   nav{ 
+    width: 100vw;
+    background-color:#353534;
+    flex-direction:column;
+    align-items: center;
+    align-content: center;
+    justify-content:space-evenly;
+    height: auto;
+    text-align: center;
+    display: none;
+    
+
+}
+    .tab {
         display:block;
+        width: 100vw;
+        border-bottom: 1px solid #9c8c7e;
         padding: 2rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
         justify-content: center;
         align-items: center;
         text-align: center;
+        height:15% ;
+        z-index: 20;
+       
+    }
+    #toggle:checked + .tab {
+        display:block;
+    }
     
-    }
-    nav{ 
-        width: 100vw;
-        display: inline-block;
-        background-color:#353534;
-        flex-direction:column;
-        align-items: center;
-        align-content: center;
-        justify-content:space-evenly;
-        height: auto;
-
-    }
+   
     header { 
         display:inline-block;
         justify-content:space-evenly;
@@ -232,7 +249,5 @@ label{
         margin-top: 10rem;
         padding-top:40rem;
     }
-    .pokeworld{
-
-    }
+    
 }
