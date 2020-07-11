@@ -1,4 +1,4 @@
-import allPoke from './data.js';
+import { allPoke, orderAz, orderZa } from './data.js';
 
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
@@ -6,11 +6,14 @@ import data from './data/pokemon/pokemon.js';
 
 // se  crea variable  del data pokemon se llama al array de la funcion del data.js
 const pokepedia = allPoke(data.pokemon);
-// Variable  de  pokepedia ordenada alfabeticamente
-
+// se crea  variable del data  pero ordenado de A a Z
+const orderAzPoke = orderAz(pokepedia);
+// se crea  variable del data  pero ordenado de Z a A
+const orderZaPoke = orderZa(pokepedia);
 // eslint-disable-next-line no-console
-console.table(pokepedia);
-
+console.table(orderZaPoke);
+// eslint-disable-next-line no-console
+console.table(orderAzPoke);
 
 /* let propiedade = Object.keys(data.pokemon);
 console.log(propiedade[1],data.pokemon[properties[3]]);
