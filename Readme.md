@@ -115,7 +115,7 @@ Brainstorm nombre de marca
 
     Realizado a mano alzada, colocamos de manera clara nuestras espectativas de la página.
 ![PBF.firstsketch ](../src/imagenes/firstsketch.jpeg)
-
+![PBF.secondsketch ](../src/imagenes/secondsketch.jpeg)
     Testeo de usabilidad realizado mediante feedback en forma grupal y de squads.
 
 ## Block Frame

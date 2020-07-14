@@ -1,3 +1,4 @@
+
 // estas funciones son de ejemplo
 // (export const pokeDetails = (object) => 'test';
 // export const anotherExample = () => 'OMG';
@@ -40,8 +41,38 @@ const orderZa = (infoPokemon) => {
   });
   return newArrayPoke;
 };
+// ORDENAR POR NUMERO     (array.sort(function(a, b){return b-a}); )
+const orderNum = (infoPokemon) => {
+  const newArrayPoke = [];
+  for (let i = 0; i < infoPokemon.length; i += 1) {
+    newArrayPoke.push(infoPokemon[i]);
+  }
+  newArrayPoke.sort((a, b) => {
+    // comparamos  2 elementos  nombre si a es mayo a b retorna -1 y se coloca antes de b
+    if (a.num < b.num) { return -1; }
+    if (a.num > b.num) { return 1; }
+    return 0;
+  });
+  return newArrayPoke;
+};
 
-// filtrar  por tipo de pokemon
+// crear  funcion para  filtro TIPO POKEMON
 
+const pokeFilter = 
+//LISTA LOS TIPOS DE POKEMON
+let tipo_pok = [],gen_pok=[],name_pok=[];
+data.pokemon.map(function(pokem){
+  //console.log(numero)
+  pokem.type.map(function(tipo){
+       tipo_pok.push(tipo)
+  })
+  gen_pok.push(pokem.generation);
+  name_pok.push(pokem.name);
+});
 
-export { allPoke, orderAz, orderZa };
+export {
+  allPoke,
+  orderAz,
+  orderZa,
+  orderNum,
+};
