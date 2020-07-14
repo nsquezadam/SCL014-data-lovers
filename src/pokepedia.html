@@ -20,42 +20,47 @@
           <a href="#maps" class= "tab hide">Maps</a>
         </nav>
     </header>
-<main class="pokepedia">
-  <h1>POKEPEDIA</h1>  
-  <div class="search">
-    <form action="#" method="post" target="_blank">
-      <p>
-        
-        Búsqueda de Pokemon:
- <input id="pokeName" type="search" name="busquedapokemon" placeholder="Nombre Pokemon" size="15" list="pokelist">
-      <br>
-        <datalist id="pokelist">
-        </datalist>
-        <input type="submit" value="Buscar" >
-      </p>
-    </form>
-  </div>
- 
-
-  <div id="selectorType">TIPO DE POKEMON
-  
-    <form action="$#">
-      <input type="checkbox" id="typeGrass" name="grass" value="type">Grass <br>
-    
-      <input type="checkbox" id="typePoison" name="poison" value="type">Poison<br>
-      
-      <input type="checkbox" id="typeFire" name="fire"  value="type">Fire<br> 
-    
-      <input type="submit" value="Filtrar">
-    </form>
-</div>  
-   <section id="allpoke">
-     <h2>Pokemones</h2>
-   </section>  
-  </main>
- <footer> 
- </footer>
-    <script src="./main.js" type="module"></script>      
+    <main class="pokepedia">
+ <div class="selectorType">
+          
+            <select name="" id="">
+              <form action="$#" id="alltype"></form>
+           <option class="btntype" value="0">normal</option>
+           <option class="btntype" value="1">fire</option>
+           <option class="btntype" value="2">grass</option>
+           <option class="btntype" value="3">poison</option>
+           <option class="btntype" value="4">ghost</option>
+           <option class="btntype" value="5">bug</option>
+          </form>
+        </select>
+        <select name="" id="">
+          <form action="$#" id="alltype"></form>
+       <option class="btntype" value="0">normal</option>
+       <option class="btntype" value="1">fire</option>
+       <option class="btntype" value="2">grass</option>
+       <option class="btntype" value="3">poison</option>
+       <option class="btntype" value="4">ghost</option>
+       <option class="btntype" value="5">bug</option>
+      </form>
+    </select>
+    <select name="" id="">
+      <form action="$#" id="alltype"></form>
+   <option class="btntype" value="0">normal</option>
+   <option class="btntype" value="1">fire</option>
+   <option class="btntype" value="2">grass</option>
+   <option class="btntype" value="3">poison</option>
+   <option class="btntype" value="4">ghost</option>
+   <option class="btntype" value="5">bug</option>
+  </form>
+</select>
+        </div>  
+        <h1>POKEPEDIA</h1> 
+        <div class="allpoke"></div>
+      </div>  
+    </main>
+    <footer> 
+    </footer>
+    <script src="./main.js" type="module"></script>           
 </body>
 
 </html>

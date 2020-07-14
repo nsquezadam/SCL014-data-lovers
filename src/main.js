@@ -1,5 +1,10 @@
-import { allPoke, orderAz, orderZa } from './data.js';
-
+import {
+  allPoke,
+  orderAz,
+  orderZa,
+  orderNum,
+  nuevoArray,
+} from './data.js';
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
@@ -11,16 +16,10 @@ const pokepedia = allPoke(data.pokemon);
 const orderAzPoke = orderAz(pokepedia);
 // se crea  variable del data  pero ordenado de Z a A
 const orderZaPoke = orderZa(pokepedia);
-// variable  filtro pokemon
-
-// eslint-disable-next-line no-console
-// console.table(orderZaPoke);
-// eslint-disable-next-line no-console
-console.table(pokepedia);
-// eslint-disable-next-line no-console
-console.table(orderAzPoke);
-// eslint-disable-next-line no-console
-console.log(orderZaPoke);
+// variable orden numerico
+const poke_array = orderNum(pokepedia);
+// variable  filtro pokemon ( data  con la seleccion  )
+// const typePokeFilter = typePoke(pokepedia, 'water');
 
 // imprimir los nombres de los pokemones en html ok
 // recorrer la data con for 5 ok
@@ -31,9 +30,9 @@ console.log(orderZaPoke);
 // darle la función 4 ok
 // const allPoke = data.pokemon;
 
-document.getElementById('allpoke').innerHTML = pokepedia.map(allpoke => `
-  <div id ="card"><div class="imaconteiner"> <img id="ima"src="${allpoke.img}" width="130px" > </div>
-  <h2 class="info"> ${allpoke.name}</h2> 
+document.getElementByClass('allpoke').innerHTML = pokepedia.map(allpoke => `
+ <div id ="card"><div class="imaconteiner"> <img id="ima"src="${allpoke.img}" width="130px" > </div>
+  <h2 class="info"> ${allpoke.name}</h2>
   <h3 class="info">nº pokedex: ${allpoke.num}</h3>
   <h3 class="info">Generacion: ${allpoke.generation.name}</h3>
   <h4 class="info">Peso: ${allpoke.size.weight}</h4>
