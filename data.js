@@ -28,7 +28,7 @@ const uniqueSetName = new Set(namePok);
 // console.table(uniqueSetType);
 // eslint-disable-next-line no-console
 // console.table(uniqueSetName);
-// variables para exportar en  variables de argumentos
+// lista para exportar en  variables de argumentoslistas set convertidos en arreglo
 export const uniqueArrayType = [...uniqueSetType].sort();
 // tranforma los objetos  iterables   en arreglo en este caso solo de la generacion
 export const uniqueArrayGen = Array.from(uniqueSetGen).map(JSON.parse);
@@ -52,7 +52,6 @@ export const numSortFunction = (a, b) => {
   }
   return (a.num < b.num) ? -1 : 1;
 };
-
 
 // eslint-disable-next-line import/no-mutable-exports
 export let pokeArray = data.pokemon.sort(numSortFunction);
@@ -187,22 +186,23 @@ export const pokeSearch = () => {
 
 // ACCION DE FILTRAR POR TIPO
 export const filterType = () => {
-  let typeMarked = 0; let genMarked = 0;
-  // eslint-disable-next-line array-callback-return
-  uniqueArrayType.map((tipo) => {
-    if (document.getElementById(tipo).checked === true) {
-      typeMarked += 1;
-    }
-  });
-  // eslint-disable-next-line array-callback-return
-  uniqueArrayGen.map((gen) => {
-    if (document.getElementById(gen.name).checked === true) {
-      genMarked += 1;
-    }
-  });
+  const genMarked = uniqueArrayGen
+    .filter(gen => document.getElementById(gen.name).checked === true)
+    .map(name => name)
+    // eslint-disable-next-line no-unused-vars
+    .reduce((contador, _score) => contador + 1, 0);
+
+  const typeMarked = uniqueArrayType
+    .filter(tipo => document.getElementById(tipo).checked === true)
+    .map(tipo => tipo)
+    // reduce se utiliza para contar las variables que cumplen la condicion
+    // eslint-disable-next-line no-unused-vars
+    .reduce((contador, _score) => contador + 1, 0);
+
   if (typeMarked + genMarked > 0) {
     // eslint-disable-next-line array-callback-return
     data.pokemon.map((pokem) => {
+      // evalua las las variables  junto con la concatenacion del  id en este caso
       // eslint-disable-next-line no-eval
       const cardPoke = eval(`p${pokem.num}`);
       let addType = 0; let addGen = 0;
@@ -250,6 +250,7 @@ export const filterType = () => {
     });
   }
 };
+
 /*
 
 /* opciones no funcionalesxs
