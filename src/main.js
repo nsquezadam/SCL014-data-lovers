@@ -1,25 +1,18 @@
-import {
-  allPoke,
-  orderAz,
-  orderZa,
-  orderNum,
-  nuevoArray,
-} from './data.js';
-// import data from './data/atletas/atletas.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
+import * as data from './data.js';
 
+// CARGA FILTROS AL INICIO DE LA PAGINA
+data.allFilters();
 
-// se  crea variable  del data pokemon se llama al array de la funcion del data.js
-const pokepedia = allPoke(data.pokemon);
-// se crea  variable del data  pero ordenado de A a Z
-const orderAzPoke = orderAz(pokepedia);
-// se crea  variable del data  pero ordenado de Z a A
-const orderZaPoke = orderZa(pokepedia);
-// variable orden numerico
-const poke_array = orderNum(pokepedia);
-// variable  filtro pokemon ( data  con la seleccion  )
-// const typePokeFilter = typePoke(pokepedia, 'water');
+// CARGA POKEMON AL INICIO DE LA PAGINA
+data.pokeCard();
+
+// BOTON FILTRO TIPO
+document.getElementById('borrar').addEventListener('click', () => { data.deleteFilters(); });
+document.getElementById('busca').addEventListener('click', () => { data.pokeSearch(); });
+document.getElementById('filtro').addEventListener('click', () => { data.filterType(); });
+document.getElementById('sort_name').addEventListener('click', () => { data.nameOrder(); });
+document.getElementById('sort_num').addEventListener('click', () => { data.numOrder(); });
+
 
 // imprimir los nombres de los pokemones en html ok
 // recorrer la data con for 5 ok
@@ -29,13 +22,12 @@ const poke_array = orderNum(pokepedia);
 // traerme el boton a js 3 ok
 // darle la función 4 ok
 // const allPoke = data.pokemon;
-
-document.getElementByClass('allpoke').innerHTML = pokepedia.map(allpoke => `
- <div id ="card"><div class="imaconteiner"> <img id="ima"src="${allpoke.img}" width="130px" > </div>
-  <h2 class="info"> ${allpoke.name}</h2>
-  <h3 class="info">nº pokedex: ${allpoke.num}</h3>
-  <h3 class="info">Generacion: ${allpoke.generation.name}</h3>
-  <h4 class="info">Peso: ${allpoke.size.weight}</h4>
-  <h4 class="info">Altura: ${allpoke.size.height}</h4>
-  <h4 class="info">Tipo: ${allpoke.type}</h4>
-  <h4 class="info">Sobre: ${allpoke.about}</h4></div>`).join('');
+/*
+document.getElementByClass('allpoke').innerHTML = pokepedia.map(poke => `
+ <div id ="card"><div class="imaconteiner"> <img id= "ima" src="${poke.img}" width="130px" > </div>
+  <h2 class="info"> ${poke.name}</h2>
+  <h3 class="info">nº pokedex: ${poke.num}</h3>
+  <h3 class="info">Generacion: ${poke.generation.name}</h3>
+  <h4 class="info">Peso: ${poke.size.weight}</h4>
+  <h4 class="info">Altura: ${poke.size.height}</h4>
+  <h4 class="info">Tipo: ${poke.type}</h4></div>`).join(''); */

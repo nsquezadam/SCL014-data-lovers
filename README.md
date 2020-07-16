@@ -373,7 +373,7 @@ decidas depende de tu propia implementación.
 Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
 e independientes del DOM. Estas funciones serán después usadas desde el archivo
 `src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
+filterType, ordenado, ...).
 
 ### `src/data`
 
