@@ -16,10 +16,10 @@ body{
     left: 0;
   
 }
+
  .tab {
  	display:flex;
-     align-items: center;
-     clear: right;
+ 	align-items: center;
  	justify-content: space-between;
   /*border-right: black;*/
     text-decoration: none;
@@ -99,21 +99,20 @@ header {
 
 }     
 /* main de   indexhtml*/
-.main{
+/*.main{
     width: 100%;
     display: inline-block;
     flex-direction:column;
     justify-content:space-between;
-    padding-top:6.25rem;
-    
+    padding-top:6.25rem;   
 }
-
+*/
 /* main de Pokepedia*/
 .pokepedia {
     padding-top:6.25rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    display: grid;
+    display: inline-block;
     flex-direction: row;  
     flex-wrap: wrap;
     justify-content:space-between;
@@ -124,133 +123,111 @@ header {
 
  
 }
-.allpoke { 
-    grid-template-columns: repeat(5,fr) ;
-    grid-template-rows: repeat(5, fr);
+#allpoke { 
     padding:50px;
     margin-left: 2rem;
     margin-right: 2rem;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: rgba(37, 91, 57,0.5);
     display:flex;
     align-content: center;
     flex-direction: row;
     justify-content:space-around;
     
 }
-
-    
-#card {
+#selectorType{
+    padding-left: 1em;
+    margin-left: 2em;
+    background-color: rgba(37, 91, 57,0.5);
+    color: #0a5203;
+}
+.card {
     justify-content: space-between; 
     display: inline-block;
-    background:rgba(37, 91, 57,0.5);
+    background-image: url(./imagenes/backgroundCards.png);
+    background-size: cover;
     padding: 1.875rem;
-    border: 2px #df4b07;
-    width: 12rem;
-    height: 31rem;
-    text-align:center;
     margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    text-align:center;
+    max-width: 237px;
+    max-height: 267px;
+    align-items: flex-start;
     
 }
 .imaconteiner {
     display: inline-block;
-    width: auto;
-    align-items: center;
+    
+    
     
 }
-/*imagen no me toma los atributos aun*/
-#ima {
-    width: 200px;
-    align-self: center;
+.container{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+/*imagen */
+.ima {
+    width: 150px;
+    
 }
 .class {
-    font-size:11pt;
+    font-size:10pt;
 }
 
-#nav {
-    display: flex;
-    justify-content: flex-end;
-}
-label{
-    margin:0px 40px 0px 0px;
-    font-size: 20px;
-    line-height:70px;
-    display:none;
-    width: 29px;
-   
- 
-}
-#toggle {
-    display:none;
+
+/*AUTOCOMPLETE TEXTBOX*/
+/*the container must be positioned relative:*/
+/*.autocomplete {
+  position: relative;
+  display: inline-block;
 }
 
-@media  ( max-width:500px){
-
-
-    label{
-        display:block;
-        cursor: pointer;
-       
-        float: right;
-    }
-   
-    .logo {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:45%;
-        padding: 2rem; 
-        margin-bottom: -33px;
-        margin-right: 3.75rem;
-        margin-left: 3.75rem;
-   }
-   
-   nav{ 
-    width: 100vw;
-    background-color:#353534;
-    flex-direction:column;
-    align-items: center;
-    align-content: center;
-    justify-content:space-evenly;
-    height: auto;
-    text-align: center;
-    display: none;
-    
-
+input {
+  border: 1px solid transparent;
+  background-color: #aec2c2;
+  padding: 10px;
+  font-size: 16px;
 }
-    .tab {
-        display:block;
-        width: 100vw;
-        border-bottom: 1px solid #9c8c7e;
-        padding: 2rem;
-        margin-top: 3rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height:15% ;
-        z-index: 20;
-       
-    }
-    #toggle:checked + .tab {
-        display:block;
-    }
-    
-   
-    header { 
-        display:inline-block;
-        justify-content:space-evenly;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        /* alto de la cabecera deberia  aumentar segun contenido*/
-        background-color: #353534;
-    }
-    main {
-        display: inline-block;
-        margin-top: 10rem;
-        padding-top:40rem;
-    }
-    
+
+input[type=text] {
+  background-color: #aec2c2;
+  width: 100%;
 }
+
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99; */
+  /*position the autocomplete items to be the same width as the container:*/
+  /*top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #aec2c2; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+*/
+/*when hovering an item:*/
+/*.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}*/
+
+/*when navigating through the items using the arrow keys:
+.autocomplete-active {*/
+ /* background-color: DodgerBlue !important; 
+  color: #aec2c2; 
+}
+
+#myInput {
+    width: 75%;
+    color: green;
+}*/
