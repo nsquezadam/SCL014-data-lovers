@@ -141,7 +141,6 @@ header {
 }
 #selectorType{
     display: flex;
-    
     z-index: 1000;
     position: fixed;
     padding-left: 2rem;

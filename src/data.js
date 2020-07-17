@@ -60,25 +60,23 @@ export let pokeArray = data.pokemon.sort(numSortFunction);
 export const allFilters = () => {
   document.getElementById('alltype').innerHTML = `
           <div class="boxFilters1">
-            <p>ORDENAR</p>
-          <input type="button" id="sort_name" value="Alfabeticamente"><br><br>
-          <input type="button" id="sort_num" value="ID Pokedex"><br><br>
+            <p>SORT</p>
+          <input type="button" id="sort_name" value="Alphabetically A-Z"><br><br>
+          <input type="button" id="sort_num" value="By Pokedex ID"><br><br>
           </div>
           <div class="boxFilters2">
-          <p>Nombre</p>
-          <form>
+          <form><br>
             <div class="busqueda">
-              <input id="myInput" type="text" name="myPokemon" placeholder="Pokemon">
+              <input id="myInput" type="text" name="myPokemon" placeholder="Search for name!">
             </div>
-          </form><br><br>
-          <input type="button" id="busca" value="Buscar"><br><br><br>
+          </form><br>
+          <input type="button" id="busca" value="Search"><br><br><br>
           </div>
           <div class="boxFilters3">
-          <p>FILTROS</<p></p>
-          <br><p>Generación</p><br>${
+          <p>GENERATION</p>${
   // nos traemos la lista de  generacion puede actualizarse se trael el nombre con el num de gen.
   uniqueArrayGen.map(allgen => `<input type="checkbox" id="${allgen.name}" name="${allgen.name}" value="type"> ${allgen.name.toUpperCase()} (${allgen.num.toUpperCase()})<br>`).join('')
-}<br><p>Tipo</p><br>${
+}<br><p>TYPE</p><br>${
   // nos traemos la lista de ls tipos
   uniqueArrayType.map(alltype => `<input type="checkbox" id="${alltype}" name="${alltype}" value="type"> ${alltype.toUpperCase()}<br>`).join('')
 }<br><input type="button" id="filtro" value="Filtrar"><br>`
@@ -89,11 +87,11 @@ export const pokeCard = () => {
   document.getElementById('allpoke').innerHTML = pokeArray.map(allpoke => `
     <div class="card" id="p${allpoke.num}"><div class="imaconteiner"> <img class=ima src="${allpoke.img}" width="130px" > </div>
     <h2 class="info"> ${allpoke.name.toUpperCase()}</h2> 
-    <h3 class="info">Nº pokedex: ${allpoke.num}</h3>
-    <h3 class="info">Generacion: ${allpoke.generation.name}</h3>
-    <h4 class="info">Peso: ${allpoke.size.weight}</h4>
-    <h4 class="info">Altura: ${allpoke.size.height}</h4>
-    <h4 class="info">Tipo: ${allpoke.type}</h4></div>`).join('');
+    <h3 class="info">Nº: ${allpoke.num}</h3>
+    <h3 class="info">Generation: ${allpoke.generation.name}</h3>
+    <h4 class="info">Weight: ${allpoke.size.weight}</h4>
+    <h4 class="info">Height: ${allpoke.size.height}</h4>
+    <h4 class="info">Type: ${allpoke.type}</h4></div>`).join('');
 };
 // <h4 class="info">Sobre: ${allpoke.about}</h4>
 
