@@ -1,37 +1,20 @@
 
-import { nameSortFunction } from '../src/data.js';
+// eslint-disable-next-line import/named
+import { nameSortFunction, namePok } from '../src/data.js';
+import data from '../src/data/pokemon/pokemon';
 
-// ejemplo de informacion
-
-const dataOrderName = [
-  { name: 'venusaur' },
-  { name: 'bulbasaur' },
-  { name: 'natu' },
-  { name: 'ivysaur' },
-  { name: 'charmander' },
-];
-const dataorderAz = [
-  { name: 'bulbasaur' },
-  { name: 'charmander' },
-  { name: 'ivysaur' },
-  { name: 'natu' },
-  { name: 'venusaur' },
-];
-
+namePok();
 
 describe('nameSortFunction', () => {
   it('is a function', () => {
     expect(typeof nameSortFunction).toBe('function');
   });
-
-  /* it('return information names arranged alphabetically', () => {
-    // eslint-disable-next-line jest/valid-expect
-    expect(nameSortFunction(dataOrderName).toequal(dataorderAz));
+  it('return new array names arranged alphabetically', () => {
+    expect(data.pokemon.sort(nameSortFunction)).toMatch(data.pokemon[0].name = 'abra');
   });
-});*/
+});
 
-/*
-describe('anotherExample', () => {
+/* describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
