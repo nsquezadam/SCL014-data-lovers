@@ -37,6 +37,7 @@ export const uniqueArrayName = [...uniqueSetName].sort();
 // console.table(uniqueArrayType);
 // eslint-disable-next-line no-console
 // console.table(uniqueArrayGen);
+// eslint-disable-next-line no-console
 // console.table(uniqueArrayName);
 
 export const nameSortFunction = (a, b) => {
@@ -111,7 +112,8 @@ export const nameOrder = () => {
   // eslint-disable-next-line no-undef
   myInput.value = '';
 };
-
+// eslint-disable-next-line no-console
+console.table(pokeArray);
 // funcion para  ordenar  por numero  y borrar las demas selecciones
 export const numOrder = () => {
   pokeArray = data.pokemon.sort(numSortFunction);
