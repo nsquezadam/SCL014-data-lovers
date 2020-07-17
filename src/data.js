@@ -58,25 +58,30 @@ export let pokeArray = data.pokemon.sort(numSortFunction);
 // se crea html en data, por modificacion de datos a futuro
 export const allFilters = () => {
   document.getElementById('alltype').innerHTML = `
-          <br><h2>ORDENAR</h2><br>
+          <div class="boxFilters1">
+            <p>ORDENAR</p>
           <input type="button" id="sort_name" value="Alfabeticamente"><br><br>
           <input type="button" id="sort_num" value="ID Pokedex"><br><br>
-          <h2>FILTROS</h2><br><br>
-          <h2>Nombre</h2><br>
-          <form autocomplete="off">
-            <div class="autocomplete">
+          </div>
+          <div class="boxFilters2">
+          <p>Nombre</p>
+          <form>
+            <div class="busqueda">
               <input id="myInput" type="text" name="myPokemon" placeholder="Pokemon">
             </div>
           </form><br><br>
-          <input type="button" id="busca" value="Buscar">
-          <br><br><br><h2>Generación</h2><br>${
+          <input type="button" id="busca" value="Buscar"><br><br><br>
+          </div>
+          <div class="boxFilters3">
+          <p>FILTROS</<p></p>
+          <br><p>Generación</p><br>${
   // nos traemos la lista de  generacion puede actualizarse se trael el nombre con el num de gen.
   uniqueArrayGen.map(allgen => `<input type="checkbox" id="${allgen.name}" name="${allgen.name}" value="type"> ${allgen.name.toUpperCase()} (${allgen.num.toUpperCase()})<br>`).join('')
-}<br><h2>Tipo</h2><br>${
+}<br><p>Tipo</p><br>${
   // nos traemos la lista de ls tipos
   uniqueArrayType.map(alltype => `<input type="checkbox" id="${alltype}" name="${alltype}" value="type"> ${alltype.toUpperCase()}<br>`).join('')
 }<br><input type="button" id="filtro" value="Filtrar"><br>`
-+ '<br><input type="button" id="borrar" value="Quitar filtros">';
++ '<br><input type="button" id="borrar" value="Quitar filtros"> </div>';
 };
 // creacion de tarjeta con info de pokemon
 export const pokeCard = () => {
@@ -249,6 +254,19 @@ export const filterType = () => {
       cardPoke.style.display = 'block';
     });
   }
+};
+
+// ficha especial para la busqueda
+export const pokeCardSearch = () => {
+  document.getElementById('allpoke').innerHTML = pokeArray.map(allpoke => `
+    <div class="card" id="p${allpoke.num}"><div class="imaconteiner"> <img class=ima src="${allpoke.img}"width="130px"></div>
+    <h2 class="info"> ${allpoke.name.toUpperCase()}</h2> 
+    <h3 class="info">Nº pokedex: ${allpoke.num}</h3>
+    <h3 class="info">Generacion: ${allpoke.generation.name}</h3>
+    <h4 class="info">Peso: ${allpoke.size.weight}</h4>
+    <h4 class="info">Altura: ${allpoke.size.height}</h4>
+    <h4 class="info">Tipo: ${allpoke.type}</h4>
+    <h4 class="info">Sobre: ${allpoke.about}</h4></div>`).join('');
 };
 
 /*
