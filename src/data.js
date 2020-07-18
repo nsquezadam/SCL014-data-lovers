@@ -16,6 +16,7 @@ data.pokemon.map((pokem) => {
   namePok.push(pokem.name);
 });
 
+
 // eslint-disable-next-line no-console
 // console.table(typePok);
 // eslint-disable-next-line no-console
@@ -40,22 +41,42 @@ export const uniqueArrayName = [...uniqueSetName].sort();
 // eslint-disable-next-line no-console
 // console.table(uniqueArrayName);
 
-export const nameSortFunction = (a, b) => {
-  if (a.name === b.name) {
-    return 0;
+// ORDENAR ALFABETICAMENTE  DE A a Z (array.sort(function(a, b){return b-a}); )
+export const orderAz = (infoPokemon) => {
+  const newArrayPokeAz = [];
+  for (let i = 0; i < infoPokemon.length; i += 1) {
+    newArrayPokeAz.push(infoPokemon[i]);
   }
-  return (a.name < b.name) ? -1 : 1;
+  newArrayPokeAz.sort((a, b) => {
+    // comparamos  2 elementos  nombre si a es mayo a b retorna -1 y se coloca antes de b
+    if (a.name < b.name) { return -1; }
+    if (a.name > b.name) { return 1; }
+    return 0;
+  });
+  return newArrayPokeAz;
 };
 
-export const numSortFunction = (a, b) => {
-  if (a.num === b.num) {
-    return 0;
+// ORDENAR POR NUMERO     (array.sort(function(a, b){return b-a}); )
+export const orderNum = (infoPokemon) => {
+  const newArrayPoke = [];
+  for (let i = 0; i < infoPokemon.length; i += 1) {
+    newArrayPoke.push(infoPokemon[i]);
   }
-  return (a.num < b.num) ? -1 : 1;
+  newArrayPoke.sort((a, b) => {
+    // comparamos  2 elementos  nombre si a es mayo a b retorna -1 y se coloca antes de b
+    if (a.num < b.num) { return -1; }
+    if (a.num > b.num) { return 1; }
+    return 0;
+  });
+  return newArrayPoke;
 };
 
+// eslint-disable-next-line no-console
+// console.log(nameSortFunction(uniqueSetName));
+// eslint-disable-next-line no-console
+// console.log(typeof (nameSortFunction));
 // eslint-disable-next-line import/no-mutable-exports
-export let pokeArray = data.pokemon.sort(numSortFunction);
+export let pokeArray = orderNum(data.pokemon);
 // se crea html en data, por modificacion de datos a futuro
 export const allFilters = () => {
   document.getElementById('alltype').innerHTML = `
@@ -97,7 +118,7 @@ export const pokeCard = () => {
 
 // funcion para boton ordenar deleteFilters las demas  parametros seleccionados
 export const nameOrder = () => {
-  pokeArray = data.pokemon.sort(nameSortFunction);
+  pokeArray = orderAz(data.pokemon);
   pokeCard();
   // eslint-disable-next-line array-callback-return
   uniqueArrayType.map((tipo) => {
@@ -111,10 +132,10 @@ export const nameOrder = () => {
   myInput.value = '';
 };
 // eslint-disable-next-line no-console
-console.table(pokeArray);
+// console.log(pokeArray);
 // funcion para  ordenar  por numero  y borrar las demas selecciones
 export const numOrder = () => {
-  pokeArray = data.pokemon.sort(numSortFunction);
+  pokeArray = orderNum(data.pokemon);
   pokeCard();
   // eslint-disable-next-line array-callback-return
   uniqueArrayType.map((tipo) => {
@@ -256,18 +277,6 @@ export const filterType = () => {
   }
 };
 
-// ficha especial para la busqueda
-export const pokeCardSearch = () => {
-  document.getElementById('allpoke').innerHTML = pokeArray.map(allpoke => `
-    <div class="card" id="p${allpoke.num}"><div class="imaconteiner"> <img class=ima src="${allpoke.img}"width="130px"></div>
-    <h2 class="info"> ${allpoke.name.toUpperCase()}</h2> 
-    <h3 class="info">Nº pokedex: ${allpoke.num}</h3>
-    <h3 class="info">Generacion: ${allpoke.generation.name}</h3>
-    <h4 class="info">Peso: ${allpoke.size.weight}</h4>
-    <h4 class="info">Altura: ${allpoke.size.height}</h4>
-    <h4 class="info">Tipo: ${allpoke.type}</h4>
-    <h4 class="info">Sobre: ${allpoke.about}</h4></div>`).join('');
-};
 
 /*
 
@@ -288,20 +297,8 @@ export const pokeCardSearch = () => {
   return newArrayPoke;
 };
 
-// ORDENAR ALFABETICAMENTE  DE A a Z (array.sort(function(a, b){return b-a}); )
-const orderAz = (infoPokemon) => {
-  const newArrayPoke = [];
-  for (let i = 0; i < infoPokemon.length; i += 1) {
-    newArrayPoke.push(infoPokemon[i]);
-  }
-  newArrayPoke.sort((a, b) => {
-    // comparamos  2 elementos  nombre si a es mayo a b retorna -1 y se coloca antes de b
-    if (a.name < b.name) { return -1; }
-    if (a.name > b.name) { return 1; }
-    return 0;
-  });
-  return newArrayPoke;
-};
+
+/*
 // ORDENAR ALFABETICAMENTE  DE Z a A (array.sort(function(a, b){return b-a}); )
 const orderZa = (infoPokemon) => {
   const newArrayPoke = [];
@@ -331,3 +328,15 @@ const orderNum = (infoPokemon) => {
   return newArrayPoke;
 };
 */
+/* export const nameSortFunction = (a, b) => {
+  if (a.name === b.name) {
+    return 0;
+  }
+  return (a.name < b.name) ? -1 : 1;
+}; */
+/* export const numSortFunction = (a, b) => {
+  if (a.num === b.num) {
+    return 0;
+  }
+  return (a.num < b.num) ? -1 : 1;
+}; */
