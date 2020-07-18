@@ -1,79 +1,80 @@
 
 // eslint-disable-next-line import/named
-import { orderAz, orderNum } from '../src/data.js';
+import { orderAz, orderNum, typeMarket } from '../src/data.js';
 // import data from '../src/data/pokemon/pokemon';
-const dataOrderName = [{
-  num: '001',
-  name: 'bulbasaur',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-{
-  num: '002',
-  name: 'ivysaur',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-{
-  num: '003',
-  name: 'venusaur',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-{
-  num: '004',
-  name: 'charmander',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-];
-const dataOrderAz = [{
-  num: '001',
-  name: 'bulbasaur',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-{
-  num: '004',
-  name: 'charmander',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-{
-  num: '002',
-  name: 'ivysaur',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-{
-  num: '003',
-  name: 'venusaur',
-  generation: {
-    num: 'generation i',
-    name: 'kanto',
-  },
-},
-];
 
-// test de  order
+
+// test funcion de  orden de datos  alfabeticamente y numericamente
 describe('orderAz', () => {
   it('is a function', () => {
     expect(typeof orderAz).toBe('function');
   });
+  const dataOrderName = [{
+    num: '001',
+    name: 'bulbasaur',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  {
+    num: '002',
+    name: 'ivysaur',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  {
+    num: '003',
+    name: 'venusaur',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  {
+    num: '004',
+    name: 'charmander',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  ];
+  const dataOrderAz = [{
+    num: '001',
+    name: 'bulbasaur',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  {
+    num: '004',
+    name: 'charmander',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  {
+    num: '002',
+    name: 'ivysaur',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  {
+    num: '003',
+    name: 'venusaur',
+    generation: {
+      num: 'generation i',
+      name: 'kanto',
+    },
+  },
+  ];
 
   it('return information names arranged alphabetically', () => {
     expect(orderAz(dataOrderName)).toEqual(dataOrderAz);
@@ -90,6 +91,25 @@ describe('orderNum', () => {
   });
 });
 
+const dataType = [{
+  'name': 'natu',
+  'type': [
+    'psychic',
+    'flying',
+  ],
+}];
+// test   filtros
+
+describe('typeMarked', () => {
+  it('is a function', () => {
+    expect(typeof typeMarked).toBe('function');
+  });
+
+  it('', () => {
+    expect(typeMarked).toEqual();
+  });
+});
+
 
 /* describe('anotherExample', () => {
   it('is a function', () => {
@@ -101,15 +121,6 @@ describe('orderNum', () => {
 });
 */
 
-/* describe('orderZa', () => {
-  it('is a function', () => {
-    expect(typeof orderZa).toBe('function');
-  });
-
-  it('return information names arranged alphabetically', () => {
-    expect(orderZa(dataOrderName)).toEqual(dataorderZa);
-  });
-}); */
 
 /*
 describe('namePok', () => {
