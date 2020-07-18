@@ -15,9 +15,7 @@ body{
     top: 0;
     left: 0;
     color:#dfd2bd ;
-  
 }
-
 nav .tab {
  	display:flex;
  	align-items: center;
@@ -30,7 +28,6 @@ nav .tab {
     font-family: Roboto Condensed;
     font-size: 16px;
 }
-
 header nav { 
     background:#37412e;
     margin-right: 3.75rem;
@@ -120,9 +117,9 @@ header {
     background-attachment: fixed;
     z-index: -1 ;
     scroll-behavior: smooth;
-    text-align: center;
+    text-align: right;
     margin-top: 2rem;
-    color: #787878;
+    color: #37412e;
 
  
 }
@@ -148,21 +145,22 @@ header {
     left: 0;
     top: 3rem;
     background-color: rgba(55,65,46,0.9);
-    height:40rem;
+    height:50rem;
     align-items: center ;
     font-size: 14px;
     color: #dfd2bd ;   
     width: 13rem; 
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     text-align: left;
     font-family: Roboto;
-    padding-top: 9.15rem;
-    
-    
+    padding-top: 3rem; 
+    align-items: flex-start;  
 }
 
 .boxFilters3 .boxFilters2 .boxFilters1{
+    padding: 2rem;
     justify-content: space-evenly;
+    text-align: center;
     
 }
 #myInput{
