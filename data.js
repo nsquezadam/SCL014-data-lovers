@@ -9,8 +9,8 @@ data.pokemon.map((pokem) => {
   // eslint-disable-next-line no-console
   // console.log('200');
   // eslint-disable-next-line array-callback-return
-  pokem.type.map((tipo) => {
-    typePok.push(tipo);
+  pokem.type.map((type) => {
+    typePok.push(type);
   });
   genPok.push(pokem.generation);
   namePok.push(pokem.name);
@@ -86,9 +86,262 @@ export const allFilters = () => {
           <input type="button" id="sort_num" value="By Pokedex ID"><br><br>
           </div>
           <div class="boxFilters2">
-          <form><br>
+          <form action="" method="get"><br>
             <div class="busqueda">
-              <input id="myInput" type="text" name="myPokemon" placeholder="Search for name!">
+              <input id="myInput" type="text" name="myPokemon" placeholder="Search for name!" list="nameOfPoke">
+              <datalist id="nameOfPoke">
+              <option value="bulbasaur">
+<option value="ivysaur">
+<option value="venusaur">
+<option value="charmander">
+<option value="charmeleon">
+<option value="charizard">
+<option value="squirtle">
+<option value="wartortle">
+<option value="blastoise">
+<option value="caterpie">
+<option value="metapod">
+<option value="butterfree">
+<option value="weedle">
+<option value="kakuna">
+<option value="beedrill">
+<option value="pidgey">
+<option value="pidgeotto">
+<option value="pidgeot">
+<option value="rattata">
+<option value="raticate">
+<option value="spearow">
+<option value="fearow">
+<option value="ekans">
+<option value="arbok">
+<option value="pikachu">
+<option value="raichu">
+<option value="sandshrew">
+<option value="sandslash">
+<option value="nidoran">
+<option value="nidorina">
+<option value="nidoqueen">
+<option value="nidoran">
+<option value="nidorino">
+<option value="nidoking">
+<option value="clefairy">
+<option value="clefable">
+<option value="vulpix">
+<option value="ninetales">
+<option value="jigglypuff">
+<option value="wigglytuff">
+<option value="zubat">
+<option value="golbat">
+<option value="oddish">
+<option value="gloom">
+<option value="vileplume">
+<option value="paras">
+<option value="parasect">
+<option value="venonat">
+<option value="venomoth">
+<option value="diglett">
+<option value="dugtrio">
+<option value="meowth">
+<option value="persian">
+<option value="psyduck">
+<option value="golduck">
+<option value="mankey">
+<option value="primeape">
+<option value="growlithe">
+<option value="arcanine">
+<option value="poliwag">
+<option value="poliwhirl">
+<option value="poliwrath">
+<option value="abra">
+<option value="kadabra">
+<option value="alakazam">
+<option value="machop">
+<option value="machoke">
+<option value="machamp">
+<option value="bellsprout">
+<option value="weepinbell">
+<option value="victreebel">
+<option value="tentacool">
+<option value="tentacruel">
+<option value="geodude">
+<option value="graveler">
+<option value="golem">
+<option value="ponyta">
+<option value="rapidash">
+<option value="slowpoke">
+<option value="slowbro">
+<option value="magnemite">
+<option value="magneton">
+<option value="farfetch'd">
+<option value="doduo">
+<option value="dodrio">
+<option value="seel">
+<option value="dewgong">
+<option value="grimer">
+<option value="muk">
+<option value="shellder">
+<option value="cloyster">
+<option value="gastly">
+<option value="haunter">
+<option value="gengar">
+<option value="onix">
+<option value="drowzee">
+<option value="hypno">
+<option value="krabby">
+<option value="kingler">
+<option value="voltorb">
+<option value="electrode">
+<option value="exeggcute">
+<option value="exeggutor">
+<option value="cubone">
+<option value="marowak">
+<option value="hitmonlee">
+<option value="hitmonchan">
+<option value="lickitung">
+<option value="koffing">
+<option value="weezing">
+<option value="rhyhorn">
+<option value="rhydon">
+<option value="chansey">
+<option value="tangela">
+<option value="kangaskhan">
+<option value="horsea">
+<option value="seadra">
+<option value="goldeen">
+<option value="seaking">
+<option value="staryu">
+<option value="starmie">
+<option value="mr.">
+<option value="scyther">
+<option value="jynx">
+<option value="electabuzz">
+<option value="magmar">
+<option value="pinsir">
+<option value="tauros">
+<option value="magikarp">
+<option value="gyarados">
+<option value="lapras">
+<option value="ditto">
+<option value="eevee">
+<option value="vaporeon">
+<option value="jolteon">
+<option value="flareon">
+<option value="porygon">
+<option value="omanyte">
+<option value="omastar">
+<option value="kabuto">
+<option value="kabutops">
+<option value="aerodactyl">
+<option value="snorlax">
+<option value="articuno">
+<option value="zapdos">
+<option value="moltres">
+<option value="dratini">
+<option value="dragonair">
+<option value="dragonite">
+<option value="mewtwo">
+<option value="mew">
+<option value="chikorita">
+<option value="bayleef">
+<option value="meganium">
+<option value="cyndaquil">
+<option value="quilava">
+<option value="typhlosion">
+<option value="totodile">
+<option value="croconaw">
+<option value="feraligatr">
+<option value="sentret">
+<option value="furret">
+<option value="hoothoot">
+<option value="noctowl">
+<option value="ledyba">
+<option value="ledian">
+<option value="spinarak">
+<option value="ariados">
+<option value="crobat">
+<option value="chinchou">
+<option value="lanturn">
+<option value="pichu">
+<option value="cleffa">
+<option value="igglybuff">
+<option value="togepi">
+<option value="togetic">
+<option value="natu">
+<option value="xatu">
+<option value="mareep">
+<option value="flaaffy">
+<option value="ampharos">
+<option value="bellossom">
+<option value="marill">
+<option value="azumarill">
+<option value="sudowoodo">
+<option value="politoed">
+<option value="hoppip">
+<option value="skiploom">
+<option value="jumpluff">
+<option value="aipom">
+<option value="sunkern">
+<option value="sunflora">
+<option value="yanma">
+<option value="wooper">
+<option value="quagsire">
+<option value="espeon">
+<option value="umbreon">
+<option value="murkrow">
+<option value="slowking">
+<option value="misdreavus">
+<option value="unown">
+<option value="wobbuffet">
+<option value="girafarig">
+<option value="pineco">
+<option value="forretress">
+<option value="dunsparce">
+<option value="gligar">
+<option value="steelix">
+<option value="snubbull">
+<option value="granbull">
+<option value="qwilfish">
+<option value="scizor">
+<option value="shuckle">
+<option value="heracross">
+<option value="sneasel">
+<option value="teddiursa">
+<option value="ursaring">
+<option value="slugma">
+<option value="magcargo">
+<option value="swinub">
+<option value="piloswine">
+<option value="corsola">
+<option value="remoraid">
+<option value="octillery">
+<option value="delibird">
+<option value="mantine">
+<option value="skarmory">
+<option value="houndour">
+<option value="houndoom">
+<option value="kingdra">
+<option value="phanpy">
+<option value="donphan">
+<option value="porygon2">
+<option value="stantler">
+<option value="smeargle">
+<option value="tyrogue">
+<option value="hitmontop">
+<option value="smoochum">
+<option value="elekid">
+<option value="magby">
+<option value="miltank">
+<option value="blissey">
+<option value="raikou">
+<option value="entei">
+<option value="suicune">
+<option value="larvitar">
+<option value="pupitar">
+<option value="tyranitar">
+<option value="lugia">
+<option value="ho-oh">
+<option value="celebi">
+                </datalist>
             </div>
           </form><br>
           <input type="button" id="busca" value="Search"><br><br><br>
@@ -121,8 +374,8 @@ export const nameOrder = () => {
   pokeArray = orderAz(data.pokemon);
   pokeCard();
   // eslint-disable-next-line array-callback-return
-  uniqueArrayType.map((tipo) => {
-    document.getElementById(tipo).checked = false;
+  uniqueArrayType.map((type) => {
+    document.getElementById(type).checked = false;
   });
   // eslint-disable-next-line array-callback-return
   uniqueArrayGen.map((gen) => {
@@ -138,8 +391,8 @@ export const numOrder = () => {
   pokeArray = orderNum(data.pokemon);
   pokeCard();
   // eslint-disable-next-line array-callback-return
-  uniqueArrayType.map((tipo) => {
-    document.getElementById(tipo).checked = false;
+  uniqueArrayType.map((type) => {
+    document.getElementById(type).checked = false;
   });
   // eslint-disable-next-line array-callback-return
   uniqueArrayGen.map((gen) => {
@@ -158,8 +411,8 @@ export const deleteFilters = () => {
     cardPoke.style.display = 'block';
   });
   // eslint-disable-next-line array-callback-return
-  uniqueArrayType.map((tipo) => {
-    document.getElementById(tipo).checked = false;
+  uniqueArrayType.map((type) => {
+    document.getElementById(type).checked = false;
   });
   // eslint-disable-next-line array-callback-return
   uniqueArrayGen.map((gen) => {
@@ -200,8 +453,8 @@ export const pokeSearch = () => {
       });
     }
     // eslint-disable-next-line array-callback-return
-    uniqueArrayType.map((tipo) => {
-      document.getElementById(tipo).checked = false;
+    uniqueArrayType.map((type) => {
+      document.getElementById(type).checked = false;
     });
     // eslint-disable-next-line array-callback-return
     uniqueArrayGen.map((gen) => {
@@ -219,8 +472,8 @@ export const filterType = () => {
     .reduce((contador, _score) => contador + 1, 0);
 
   const typeMarked = uniqueArrayType
-    .filter(tipo => document.getElementById(tipo).checked === true)
-    .map(tipo => tipo)
+    .filter(type => document.getElementById(type).checked === true)
+    .map(type => type)
     // reduce se utiliza para contar las variables que cumplen la condicion
     // eslint-disable-next-line no-unused-vars
     .reduce((contador, _score) => contador + 1, 0);
@@ -234,11 +487,11 @@ export const filterType = () => {
       let addType = 0; let addGen = 0;
       if (typeMarked > 0) {
         // eslint-disable-next-line array-callback-return
-        pokem.type.map((tipo2) => {
+        pokem.type.map((type2) => {
           // eslint-disable-next-line array-callback-return
-          uniqueArrayType.map((tipo) => {
-            if (document.getElementById(tipo).checked === true) {
-              if (tipo === tipo2) {
+          uniqueArrayType.map((type) => {
+            if (document.getElementById(type).checked === true) {
+              if (type === type2) {
                 addType = 1;
               }
             }

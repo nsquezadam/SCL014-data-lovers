@@ -48,7 +48,7 @@ Entrevistas con Usuarios y Visitantes
     Se Definen 7 historias de usuarios creando un Backlog con prioridades para  coordinar durante cada sprint.
 
 ![HIST. USUARIO ](../src/imagenes/HUS1.png)
-4
+
 ## DESARROLLO
 
     * El proyecto decidió realizarse bajo la metodología Agiles Scrum, con Sprints semanales. Mediante la App Web Trello: <https://trello.com/b/0IoIlvbF/scrum>
