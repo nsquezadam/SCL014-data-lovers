@@ -88,7 +88,7 @@ export const allFilters = () => {
           <div class="boxFilters2">
           <form action="" method="get"><br>
             <div class="busqueda">
-              <input id="myInput" type="text" name="myPokemon" placeholder="Search for name!" list="nameOfPoke">
+              <input id="myInput" type="text" name="myPokemon" placeholder="Search by name!" list="nameOfPoke">
               <datalist id="nameOfPoke">
               <option value="bulbasaur">
               <option value="ivysaur">
@@ -349,10 +349,10 @@ export const allFilters = () => {
           <div class="boxFilters3">
           <p>GENERATION</p>${
   // nos traemos la lista de  generacion puede actualizarse se trael el nombre con el num de gen.
-  uniqueArrayGen.map(allgen => `<input type="checkbox" id="${allgen.name}" name="${allgen.name}" value="type"> ${allgen.name.toUpperCase()} (${allgen.num.toUpperCase()})<br>`).join('')
+  uniqueArrayGen.map(allgen => `<input type="checkbox" id="${allgen.name}" name="${allgen.name}" value="type"> ${allgen.name[0].toUpperCase() + allgen.name.slice(1)} (${allgen.num[0].toUpperCase() + allgen.num.slice(1)})<br>`).join('')
 }<br><p>TYPE</p><br>${
   // nos traemos la lista de ls tipos
-  uniqueArrayType.map(alltype => `<input type="checkbox" id="${alltype}" name="${alltype}" value="type"> ${alltype.toUpperCase()}<br>`).join('')
+  uniqueArrayType.map(alltype => `<input type="checkbox" id="${alltype}" name="${alltype}" value="type"> ${alltype[0].toUpperCase() + alltype.slice(1)}<br>`).join('')
 }<br><input type="button" id="filtro" value="Filtrar"><br>`
 + '<br><input type="button" id="borrar" value="Quitar filtros"> </div>';
 };
@@ -360,7 +360,7 @@ export const allFilters = () => {
 export const pokeCard = () => {
   document.getElementById('allpoke').innerHTML = pokeArray.map(allpoke => `
     <div class="card" id="p${allpoke.num}"><div class="imaconteiner"> <img class=ima src="${allpoke.img}" width="130px" > </div>
-    <h2 class="info"> ${allpoke.name.toUpperCase()}</h2> 
+    <h2 class="info">${allpoke.name[0].toUpperCase() + allpoke.name.slice(1)}</h2> 
     <h3 class="info">Nº: ${allpoke.num}</h3>
     <h3 class="info">Generation: ${allpoke.generation.name}</h3>
     <h4 class="info">Weight: ${allpoke.size.weight}</h4>
