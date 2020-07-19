@@ -530,7 +530,7 @@ export const filterType = () => {
   }
 };
 
-console.log(typeof (pokeSearch));
+// console.log(typeof (pokeSearch));
 /*
 
 /* opciones no funcionalesxs

@@ -1,6 +1,6 @@
 
 // eslint-disable-next-line import/named
-import { orderAz, orderNum, typeMarket, pokeSearch } from '../src/data.js';
+import { orderAz, orderNum } from '../src/data.js';
 // import data from '../src/data/pokemon/pokemon';
 
 
@@ -90,10 +90,6 @@ describe('orderNum', () => {
     expect(orderNum(num1)).toEqual(num2);
   });
 });
-
-
-
-
 /* describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
