@@ -1,6 +1,7 @@
 
 // eslint-disable-next-line import/named
 import * as fn from '../src/data.js';
+
 // import data from '../src/data/pokemon/pokemon';
 
 
