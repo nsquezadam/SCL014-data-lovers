@@ -1,27 +1,21 @@
-* { 
+/* * { 
     margin: 0px;
-    padding:0px;
-}
-
+    padding:0px;  
+}*/
 body{
-
     background-image:url(./imagenes/wall\ pokemon\ montañas.png);
     background-repeat: no-repeat;
-    position: fixed;
-  /* 
+    background-attachment: fixed;
+    /*z-index: -1 ;*/
+    scroll-behavior: smooth;
     background-size: cover;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    will-change: transform;
-    -webkit-transform: translate3d(0,0,0);
-    z-index: -1;
-   */
-
+    color:#dfd2bd ;
 }
-
- .tab {
+nav .tab {
  	display:flex;
  	align-items: center;
  	justify-content: space-between;
@@ -29,30 +23,28 @@ body{
     text-decoration: none;
     padding-left: 2rem;
     text-align: center;
-    color:#e5e5e5; 
+    color:#dfd2bd; 
     font-family: Roboto Condensed;
     font-size: 16px;
-
 }
-
-nav { 
-    background:#353534;
-    margin-right: 3.75em;
-    width: 100vw;
+header nav { 
+    background:#37412e;
+    margin-right: 3.75rem;
+    width: 100%;
     height: 5.125rem;
-
     display: flex;
     justify-content: flex-end;
+    top:0 ;
+    left: 0;
 }
-
  .logo {
  	display: flex;
  	justify-content: flex-start;
  	align-items: center;
- 	margin-left: 3.75rem;
+    margin-left: 3.75rem;
+    
 
 }
-
 header {
     width: 100%;
     height: 5.125rem;
@@ -61,15 +53,175 @@ header {
     z-index: 1000;
     justify-content: space-between;
     top: 0;
-    background-color:#353534;
-    
-
+    left: 0;
+    background-color:#37412e;
 }
-main {
-    padding: 100px;
-    background: rgba(86,100,47, .7);
-    width: 80%;
-    max-width: 1000px;
-    
 
+/* main de   indexhtml*/
+/*.main{
+    width: 100%;
+    display: inline-block;
+    flex-direction:column;
+    justify-content:space-between;
+    padding-top:6.25rem;   
 }
+*/
+/* main de Pokepedia*/
+.pokepedia {
+    padding-top:5.125rem;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    text-align: center;
+    color: #787878
+    /*color: #37412e;*/
+}
+#allpoke { 
+    padding:28px;
+    margin-left: 13.5rem;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(55,65,46,0.9);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+   
+}
+#selectorType{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(55,65,46,0.9);
+    font-size: 14px;
+    color: #dfd2bd ;   
+    text-align: left;
+    font-family: Roboto;
+    padding-top: 5.125rem; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: auto;
+}
+/* no encontre */
+#title{
+    margin-left: 15rem;
+}
+
+.boxFilters3 .boxFilters2 .boxFilters1{
+    justify-content: space-evenly;
+}
+#myInput{
+    display: block;
+    font-size: 16px;
+    width: 10rem;
+    height: 1rem;
+    text-align: center  ;
+}
+#sort_name #sort_num #busca #borrar 
+#filtro {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 6px;
+   
+}
+/* no funciona hover
+#sort_name #sort_num #busca #borrar
+ #filtro:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+*/
+.card {
+    justify-content: space-between; 
+    display: inline-block;
+    background-image: url(./imagenes/backgroundCards.png);
+    background-size: cover;
+    padding: 4rem;
+    margin: 2rem;
+    text-align:center;
+    width: 10rem;
+    height: 20.813rem;
+    align-items: flex-start;
+    color: #787878;
+    font-size: 10pt;
+    border-radius: 6pt;
+    font-family: Roboto;
+}
+.h2{
+    font-family: Roboto Condensed
+}
+
+.imaconteiner {
+    display: inline-block;    
+}
+.container{
+  display: block;
+}
+
+/*imagen */
+.ima {
+    width: 150px;
+    
+}
+.class {
+    font-size:10pt;
+}
+
+
+/*AUTOCOMPLETE TEXTBOX*/
+/*the container must be positioned relative:*/
+/*.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #aec2c2;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #aec2c2;
+  width: 100%;
+}
+
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99; */
+  /*position the autocomplete items to be the same width as the container:*/
+  /*top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #aec2c2; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+*/
+/*when hovering an item:*/
+/*.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}*/
+
+/*when navigating through the items using the arrow keys:
+.autocomplete-active {*/
+ /* background-color: DodgerBlue !important; 
+  color: #aec2c2; 
+}
+
+#myInput {
+    width: 75%;
+    color: green;
+}*/
