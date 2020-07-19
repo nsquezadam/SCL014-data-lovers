@@ -1,6 +1,6 @@
 
 // eslint-disable-next-line import/named
-import { orderAz, orderNum, typeMarket } from '../src/data.js';
+import { orderAz, orderNum, typeMarket, pokeSearch } from '../src/data.js';
 // import data from '../src/data/pokemon/pokemon';
 
 
@@ -91,24 +91,7 @@ describe('orderNum', () => {
   });
 });
 
-const dataType = [{
-  'name': 'natu',
-  'type': [
-    'psychic',
-    'flying',
-  ],
-}];
-// test   filtros
 
-describe('typeMarked', () => {
-  it('is a function', () => {
-    expect(typeof typeMarked).toBe('function');
-  });
-
-  it('', () => {
-    expect(typeMarked).toEqual();
-  });
-});
 
 
 /* describe('anotherExample', () => {
