@@ -124,8 +124,8 @@
 ### Prototipado de contenido
 
     Realizado a mano alzada, colocamos de manera clara nuestras espectativas de la página.
-![PBF.firstsketch ](../src/imagenes/firstsketch.jpeg)
-![PBF.secondsketch ](../src/imagenes/secondsketch.jpeg)
+![PBF.firstsketch ](./src/imagenes/firstsketch.jpeg)
+![PBF.secondsketch ](./src/imagenes/secondsketch.jpeg)
     Testeo de usabilidad realizado mediante feedback en forma grupal y de squads.
 
 ### Prototipado de baja fidelidad
@@ -133,11 +133,11 @@
     Desarrollamos nuestros sketches de baja fidelidad en Balsamiq.
     Ideas en formato WEB y Movil:
 
-![PBF.DESKTOP1 ](../src/imagenes/PBF-DESKTOP1.png)
+![PBF.DESKTOP1 ](./src/imagenes/PBF-DESKTOP1.png)
 
-![PBF.DESKTOP1 ](../src/imagenes/PBF-DESKTOP2.png)
+![PBF.DESKTOP1 ](./src/imagenes/PBF-DESKTOP2.png)
 
-![PBF.MOVIL ](../src/imagenes/PBF-MOVIL.png)
+![PBF.MOVIL ](./src/imagenes/PBF-MOVIL.png)
 
     Testeo de usabilidad realizado mediante  feedback en forma grupal y con entrevistas aleatorias a personas externas de Laboratoria.
 
@@ -146,19 +146,19 @@
 #### Wireframe
 
     Se construyó en Figma, en tonos grises.
-![PBF.wireframeH1-1](../src/imagenes/wireframeH1-1.png)
+![PBF.wireframeH1-1](./src/imagenes/wireframeH1-1.png)
 
 #### Interface
 
     Elegimos Figma para elaborar nuestro modelo, reflejando la paleta de colores, mood, y todo los puntos anteriormente establecidos en la etapa de Ideación.
-![PBF.interfaceH1-1](../src/imagenes/interfaceH1-1.png)
+![PBF.interfaceH1-1](./src/imagenes/interfaceH1-1.png)
 
 #### Prototype
 
-![PBF.figma-proto-1](../src/imagenes/figma-proto-1.png)
-![PBF.figma-proto-2](../src/imagenes/figma-proto-2.png)
-![PBF.figma-proto-3](../src/imagenes/figma-proto-3.png)
-![PBF.figma-proto-4](../src/imagenes/figma-proto-4.png)
+![PBF.figma-proto-1](./src/imagenes/figma-proto-1.png)
+![PBF.figma-proto-2](./src/imagenes/figma-proto-2.png)
+![PBF.figma-proto-3](./src/imagenes/figma-proto-3.png)
+![PBF.figma-proto-4](./src/imagenes/figma-proto-4.png)
 
 #### Testing
 
