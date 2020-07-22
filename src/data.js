@@ -15,8 +15,6 @@ data.pokemon.map((pokem) => {
   genPok.push(pokem.generation);
   namePok.push(pokem.name);
 });
-
-
 // eslint-disable-next-line no-console
 // console.table(typePok);
 // eslint-disable-next-line no-console

@@ -36,7 +36,6 @@
 
 <https://www.nintenderos.com/>.
 
-
 ## IDEACIÓN
 
 ### Definición de usuario
@@ -171,6 +170,7 @@
 - Fácil de ubicar, tanto los atajos como filtros.
 
 Uno de ellos:
+
 - Lo encontró carente de colores propios de la marca pokemon. Y a la vez le pareció sencilla en su funcionamiento.
 
 ## NOTA PARA PROGRAMADORES
